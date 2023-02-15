@@ -992,6 +992,7 @@ body {
   border: 0;
   padding: 0;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .modal-icon-policy {
