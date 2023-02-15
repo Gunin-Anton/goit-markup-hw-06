@@ -514,21 +514,22 @@
         </div>
 
         <div class="footer-form-container">
-          <!-- <p class="footer-form-title">Subscribe</p> -->
           <form class="footer-form">
             <div class="footer-form-field">
-              <label for="footer-mail">Subscribe</label>
+              <label class="footer-label-email" for="footer-mail"
+                >Subscribe</label
+              >
               <input
                 type="email"
-                name="footer-mail"
-                class="form-email"
+                name="email"
+                class="footer-input-email"
                 placeholder="E-mail"
                 id="footer-mail"
               />
             </div>
-            <button type="submit" class="form-email-btn btn">
+            <button type="submit" class="footer-btn-email btn">
               Subscribe
-              <svg class="footer-icon-subscribe" width="24px" height="20px">
+              <svg class="footer-icon-subscribe" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
@@ -549,74 +550,79 @@
         <h2 class="modal-title">
           Leave your contacts and we will call you back
         </h2>
+
         <form class="modal-form">
-          <label class="form-label">
-            <span class="form-text">Name</span>
-            <div class="form-icon-container">
-              <input
-                type="text"
-                name="user-name"
-                class="modal-form-input"
-                autofocus
-                required
-                minlength="2"
-              />
-              <svg class="modal-form-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-modal-name"></use>
-              </svg>
-            </div>
-          </label>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="name">Name</label>
+            <input
+              type="text"
+              name="user-name"
+              id="name"
+              class="modal-form-input"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-modal-name"></use>
+            </svg>
+          </div>
 
-          <label class="form-label">
-            <span class="form-text">Phone</span>
-            <div class="form-icon-container">
-              <input
-                type="tel"
-                name="user-phone"
-                class="modal-form-input"
-                required
-              />
-              <svg class="modal-form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-modal-phone"></use>
-              </svg>
-            </div>
-          </label>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="tel">Phone</label>
+            <input
+              type="tel"
+              name="user-phone"
+              id="tel"
+              class="modal-form-input"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-modal-phone"></use>
+            </svg>
+          </div>
 
-          <label class="form-label">
-            <span class="form-text">Email</span>
-            <div class="form-icon-container">
-              <input
-                type="email"
-                name="user-email"
-                class="modal-form-input"
-                required
-              />
-              <svg class="modal-form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-modal-email"></use>
-              </svg>
-            </div>
-          </label>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="mail">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              class="modal-form-input"
+              required
+            />
+            <svg class="modal-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-modal-email"></use>
+            </svg>
+          </div>
 
-          <label class="form-label">
-            <span class="form-text">Comment</span>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
-              name="form-user-comment"
+              name="comment"
+              id="user-comment"
               placeholder="Text input"
-              class="form-user-comment"
-            >
-            </textarea>
-          </label>
+              class="modal-form-comment"
+            ></textarea>
+          </div>
 
-          <input
-            id="user-policy"
-            type="checkbox"
-            name="user-policy"
-            class="modal-form-input-check visually-hidden"
-          />
-          <label for="user-policy" class="form-user-policy">
-            I accept the terms and conditions of the&nbsp;
-            <a href="./index.html">Privacy Policy</a>
-          </label>
+          <div class="modal-form-policy">
+            <label class="modal-label-policy" for="checkbox-policy">
+              <input
+                type="checkbox"
+                name="user-policy"
+                id="checkbox-policy"
+                class="modal-form-checkbox"
+              />
+              <span class="modal-icon-policy"></span>
+              <span>I accept the terms and conditions of they</span>
+            </label>
+            <a
+              href="#"
+              target="_blank"
+              title="Company Tagline Here"
+              class="modal-policy-link"
+              >Privacy Policy
+            </a>
+          </div>
 
           <button type="submit" class="form-button btn">Send</button>
         </form>
