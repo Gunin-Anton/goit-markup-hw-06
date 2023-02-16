@@ -574,17 +574,7 @@ body {
   margin-left: auto;
 }
 
-.footer-form {
-  display: flex;
-  gap: 24px;
-}
-
-.footer-form-field {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-label-email {
+.footer-subscribe-title {
   margin-bottom: 16px;
   font-family: "Roboto";
   font-style: normal;
@@ -595,13 +585,15 @@ body {
   color: #ffffff;
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-input-email {
   width: 264px;
-  height: 40px;
   font-size: 12px;
   line-height: 1.3;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -634,7 +626,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 165px;
-  height: 40px;
   padding: 8px 24px;
   margin-top: auto;
   font-family: "Roboto";
